@@ -175,3 +175,7 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 # TEE
 ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_trustonic_tee_support=1
+
+# WiFi
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=15
