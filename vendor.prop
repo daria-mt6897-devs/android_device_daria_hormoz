@@ -1,4 +1,6 @@
 # Audio
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
 persist.vendor.audio.usb.offload=true
 ro.vendor.mtk_audio_tuning_tool_ver=V1
 ro.audio.silent=0
