@@ -116,5 +116,8 @@ BOARD_USES_METADATA_PARTITION := true
 # Platform
 TARGET_BOARD_PLATFORM := mt6897
 
+# SPL
+VENDOR_SECURITY_PATCH := 2025-09-05
+
 # Inherit the proprietary files
 include vendor/daria/hormoz/BoardConfigVendor.mk
