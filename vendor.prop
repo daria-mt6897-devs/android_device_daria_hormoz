@@ -5,5 +5,6 @@ ro.audio.silent=0
 vendor.audio.powerhal.power.dl=true
 vendor.audio.powerhal.power.ul=true
 ro.config.vc_call_vol_steps=7
+ro.config.media_vol_steps=25
 vendor.audio.usb.super_hifi=true
 vendor.audio.usb.iems.period_us=5000
