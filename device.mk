@@ -57,7 +57,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio_policy.stub \
     audio.r_submix.default \
-    audio.usb.default
+    audio.usbv2.default
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)

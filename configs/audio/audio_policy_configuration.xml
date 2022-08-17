@@ -127,8 +127,6 @@
                              samplingRates="8000 16000 32000 44100 48000"
                              channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO"/>
                 </mixPort>
-                <mixPort name="hifi_playback" role="source"/>
-                <mixPort name="hifi_input" role="sink"/>
             </mixPorts>
             <devicePorts>
                 <!-- Output devices declaration  i.e. Sink DEVICE PORT -->
@@ -298,7 +296,7 @@
  	<xi:include href="bluetooth_audio_policy_configuration.xml"/>
 
         <!-- Usb Audio HAL -->
-        <xi:include href="usb_audio_policy_configuration.xml"/>
+        <xi:include href="usbv2_audio_policy_configuration.xml"/>
 
         <!-- Remote Submix Audio HAL -->
         <xi:include href="r_submix_audio_policy_configuration.xml"/>
