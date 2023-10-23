@@ -90,3 +90,6 @@ ro.vendor.mml.mtk_mml_support=1
 ro.vendor.mtk_ovl_bringup=0
 ro.vendor.mtk_prefer_64bit_proc=1
 ro.vendor.composer_version=3.2
+
+# Surface Flinger
+debug.sf.treat_170m_as_sRGB=1
