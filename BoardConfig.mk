@@ -6,6 +6,9 @@
 DEVICE_PATH := device/daria/hormoz
 KERNEL_PATH := device/daria/hormoz-kernel
 
+# Enable 64-bit for non-zygote.
+ZYGOTE_FORCE_64 := true
+
 # A/B
 AB_OTA_PARTITIONS := \
     boot \
