@@ -14,6 +14,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 DEVICE_PATH := device/daria/hormoz
 
+# Characteristics
+PRODUCT_CHARACTERISTICS := nosdcard
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=24m \
