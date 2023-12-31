@@ -92,4 +92,5 @@ ro.vendor.mtk_prefer_64bit_proc=1
 ro.vendor.composer_version=3.2
 
 # Surface Flinger
+debug.sf.enable_hwc_vds=0
 debug.sf.treat_170m_as_sRGB=1
