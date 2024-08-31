@@ -73,6 +73,7 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     init.mt6897.rc \
     init.cgroup.rc \
+    init.recovery.mt6897.rc \
     init.mtkgki.rc \
     init.project.rc \
     init.sensor_2_0.rc \
