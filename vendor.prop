@@ -22,6 +22,9 @@ vendor.streamin.pcm.dump=0
 # ConsumerIR
 ro.hardware.consumerir=common
 
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # DRM
 ro.netflix.bsp_rev=MTK6897-37606-1
 
