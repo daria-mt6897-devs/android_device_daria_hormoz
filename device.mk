@@ -95,6 +95,10 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot-service.example_recovery \
     fastbootd
 
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack-service.mediatek
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
