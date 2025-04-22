@@ -2,6 +2,12 @@
 ## are from  V6.7.2.1.BOND2.
 ## variant: GLOBAL
 
+# AAL
+vendor/lib64/libaal_key.so
+vendor/lib64/libaal_sec.so
+vendor/lib64/mt6897/libaal_cust_func.so:vendor/lib64/libaal_cust_func.so
+vendor/lib64/mt6897/libaalservice.so:vendor/lib64/libaalservice.so
+
 # Audio
 vendor/bin/mt6660_calibration
 vendor/bin/rt5512_calibration
