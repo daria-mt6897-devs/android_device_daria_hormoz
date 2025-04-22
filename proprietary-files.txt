@@ -292,3 +292,11 @@ vendor/lib64/vendor.mediatek.hardware.mmlpq-V3-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so
+
+# Vibrator
+vendor/firmware/haptic_ram.bin
+vendor/firmware/haptic_rtp_auto_sin.bin
+vendor/firmware/haptic_rtp_lighthouse.bin
+vendor/firmware/haptic_rtp_osc_24K_5s.bin
+vendor/firmware/haptic_rtp_silk.bin
+vendor/firmware/haptic_rtp.bin
