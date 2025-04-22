@@ -19,6 +19,9 @@ vendor.usbsph.srcaws.pcm.dump=0
 vendor.streamout.pcm.dump=0
 vendor.streamin.pcm.dump=0
 
+# ConsumerIR
+ro.hardware.consumerir=common
+
 # DRM
 ro.netflix.bsp_rev=MTK6897-37606-1
 
