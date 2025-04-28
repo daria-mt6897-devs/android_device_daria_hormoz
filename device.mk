@@ -196,5 +196,13 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
 
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi-service \
+    libwifi-hal-wrapper
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi) \
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/daria/hormoz/hormoz-vendor.mk)
