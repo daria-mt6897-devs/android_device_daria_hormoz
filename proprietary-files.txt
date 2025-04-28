@@ -388,6 +388,13 @@ vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so
 
+# Tether Offload
+vendor/bin/hw/tetheroffloadservice
+vendor/etc/init/android.hardware.tetheroffload-V1-service.rc
+vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libifcutils_mtk.so
+
 # Touch
 vendor/firmware/goodix_cfg_group.bin
 vendor/firmware/goodix_firmware.bin
