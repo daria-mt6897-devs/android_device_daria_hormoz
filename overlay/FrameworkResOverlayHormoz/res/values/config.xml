@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  Copyright (C) 2023 The LineageOS Project
+
+  SPDX-License-Identifier: Apache-2.0
+-->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds.  Do not translate.
+
+     NOTE: The naming convention is "config_camelCaseValue". Some legacy
+     entries do not follow the convention, but all new entries should. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
+      The N entries of this array define N  1 zones as follows:
+         Zone 0:        0 <= LUX < array[0]
+         Zone 1:        array[0] <= LUX < array[1]
+         ...
+         Zone N:        array[N - 1] <= LUX < array[N]
+         Zone N + 1     array[N] <= LUX < infinity
+         Must be overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessLevels">
+        <item>1</item>
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>55</item>
+        <item>70</item>
+        <item>110</item>
+        <item>160</item>
+        <item>220</item>
+        <item>300</item>
+        <item>400</item>
+        <item>550</item>
+        <item>750</item>
+        <item>1000</item>
+        <item>1400</item>
+        <item>2000</item>
+        <item>2800</item>
+    </integer-array>
+    <!-- Array of desired screen brightness in nits corresponding to the lux values
+      in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
+      config_screenBrightnessMaximumNits, the display brightness is defined as the measured
+      brightness of an all-white image.
+
+      If this is defined then:
+      - config_autoBrightnessLcdBacklightValues should not be defined
+      - config_screenBrightnessNits must be defined
+      - config_screenBrightnessBacklight must be defined
+
+      This array should have size one greater than the size of the config_autoBrightnessLevels
+      array. The brightness values must be non-negative and non-decreasing. This must be
+      overridden in platform specific overlays -->
+    <array name="config_autoBrightnessDisplayValuesNits">
+        <item>2.0</item>
+        <item>4.27811</item>
+        <item>10.5265</item>
+        <item>24.990238</item>
+        <item>31.327875</item>
+        <item>40.233913</item>
+        <item>47.37759</item>
+        <item>52.077396</item>
+        <item>58.950016</item>
+        <item>67.07277</item>
+        <item>77.47953</item>
+        <item>90.164986</item>
+        <item>106.199486</item>
+        <item>126.92089</item>
+        <item>155.27893</item>
+        <item>192.01445</item>
+        <item>238.22545</item>
+        <item>292.197</item>
+    </array>
+
+    <integer-array name="config_screenBrightnessBacklight">
+        <item>1</item>
+        <item>255</item>
+    </integer-array>
+
+    <array name="config_screenBrightnessNits">
+        <item>2.0</item>
+        <item>500.0</item>
+    </array>
+
+    <integer-array name="config_ambientThresholdLevels">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </integer-array>
+
+    <integer-array name="config_ambientBrighteningThresholds">
+        <item>10000</item>
+        <item>5000</item>
+        <item>4333</item>
+        <item>3666</item>
+        <item>3000</item>
+        <item>2760</item>
+        <item>2520</item>
+        <item>2280</item>
+        <item>2040</item>
+        <item>1800</item>
+        <item>800</item>
+        <item>527</item>
+        <item>500</item>
+        <item>400</item>
+        <item>248</item>
+        <item>100</item>
+    </integer-array>
+
+    <integer-array name="config_ambientDarkeningThresholds">
+        <item>853</item>
+        <item>700</item>
+        <item>683</item>
+        <item>666</item>
+        <item>650</item>
+        <item>640</item>
+        <item>630</item>
+        <item>620</item>
+        <item>610</item>
+        <item>600</item>
+        <item>500</item>
+        <item>500</item>
+        <item>440</item>
+        <item>385</item>
+        <item>311</item>
+        <item>200</item>
+    </integer-array>
+
+    <!-- Minimum screen brightness setting allowed by power manager.
+         -2 is invalid so setting will resort to int value specified above.
+         Set this to 0.0 to allow screen to go to minimal brightness.
+         The user is forbidden from setting the brightness below this level. -->
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.01</item>
+
+    <!-- Maximum screen brightness allowed by the power manager.
+         -2 is invalid so setting will resort to int value specified above.
+         Set this to 1.0 for maximum brightness range.
+         The user is forbidden from setting the brightness above this level. -->
+    <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
+
+    <!-- Default screen brightness setting set.
+         -2 is invalid so setting will resort to int value specified above.
+         Must be in the range specified by minimum and maximum. -->
+    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.8</item>
+</resources>
