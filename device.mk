@@ -117,8 +117,8 @@ PRODUCT_PACKAGES += \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6897.rc \
+    init.mt6897.power.rc
     init.mt6897.usb.rc \
-    init.cgroup.rc \
     init.recovery.mt6897.rc \
     init.mtkgki.rc \
     init.project.rc \
@@ -143,6 +143,17 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.pixel-libperfmgr \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -191,6 +202,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
+    hardware/mediatek/libmtkperf_client \
     hardware/mediatek
 
 # Thermal
