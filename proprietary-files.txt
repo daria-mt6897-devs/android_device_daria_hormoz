@@ -777,7 +777,7 @@ vendor/lib64/libneuroeara.so
 vendor/lib64/libneuron_graph_delegate.mtk.so
 vendor/lib64/libneuron_platform.so
 vendor/lib64/libneuropilot_hal_utils.so
-vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
+vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib64/libnpagent.so
 vendor/lib64/libnpagent_server.so
 vendor/lib64/libtflite_mtk.so
@@ -975,7 +975,7 @@ vendor/etc/init/wlan_assistant.rc
 vendor/etc/vintf/manifest/CommandService.xml
 vendor/etc/wifi/nvram/wfnv_desc_data_soc70.bin
 vendor/etc/wifi/nvram/wfnv_desc_map_soc70.bin
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 vendor/lib64/libwifical.so
 vendor/lib64/libwifinvram.so
 vendor/lib64/libwifinvramdata.so
