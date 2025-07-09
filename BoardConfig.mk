@@ -6,6 +6,22 @@
 DEVICE_PATH := device/daria/hormoz
 KERNEL_PATH := device/daria/hormoz-kernel
 
+# A/B
+AB_OTA_PARTITIONS := \
+    boot \
+    init_boot \
+    odm_dlkm \
+    product \
+    system \
+    system_dlkm \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor \
+    vendor \
+    vendor_boot \
+    vendor_dlkm
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
