@@ -49,6 +49,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# API
+PRODUCT_SHIPPING_API_LEVEL := 34
+BOARD_SHIPPING_API_LEVEL := 34
+
 # Fastboot
 PRODUCT_PACKAGES += \
     android.hardware.fastboot-service.example_recovery \
