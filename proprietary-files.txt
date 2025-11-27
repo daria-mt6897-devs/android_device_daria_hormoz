@@ -200,3 +200,9 @@ vendor/firmware/BT_FW.cfg
 # DRM (Widevine)
 vendor/apex/com.google.android.widevine.nonupdatable.apex
 vendor/lib64/liboemcrypto.so
+
+# Gatekeeper
+vendor/bin/hw/android.hardware.gatekeeper-service.trustonic
+vendor/etc/init/android.hardware.gatekeeper-service.trustonic.rc
+vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.trustonic.xml
+

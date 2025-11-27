@@ -21,3 +21,6 @@ vendor.streamin.pcm.dump=0
 
 # DRM
 ro.netflix.bsp_rev=MTK6897-37606-1
+
+# Gatekeeper
+ro.hardware.gatekeeper=trustonic
