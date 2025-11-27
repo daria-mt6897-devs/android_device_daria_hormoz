@@ -265,6 +265,13 @@ vendor/lib64/mt6897/libdpframework.so:vendor/lib64/libdpframework.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint@3.0-service.trustonic
+vendor/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml
+vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
+vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
+
 # Media
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libmp3dec_mtk.so

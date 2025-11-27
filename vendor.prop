@@ -91,6 +91,9 @@ ro.vendor.mtk_ovl_bringup=0
 ro.vendor.mtk_prefer_64bit_proc=1
 ro.vendor.composer_version=3.2
 
+# Keystore
+ro.hardware.kmsetkey=trustonic
+
 # Picture Quality
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1
