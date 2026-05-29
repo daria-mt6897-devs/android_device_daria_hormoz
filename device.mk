@@ -243,6 +243,10 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
 
+# VNDK
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
