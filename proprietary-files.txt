@@ -410,6 +410,33 @@ vendor/firmware/goodix_firmware.bin
 vendor/firmware/gt9895_cfg_6897v01.bin
 vendor/firmware/gt9895_firmware_6897v01.bin
 
+# Thermal configs
+vendor/etc/thermal/disable_skin_control.conf
+vendor/etc/thermal/disable_thermal.conf
+vendor/etc/thermal/disable_thermal_temp.conf
+vendor/etc/thermal/disable_throttling.conf
+vendor/etc/thermal/fix_ttj_85.conf
+vendor/etc/thermal/fix_ttj_95.conf
+vendor/etc/thermal/thermal.conf
+vendor/etc/thermal/thermal_mtbf.conf
+vendor/etc/thermal/thermal_policy_00.conf
+vendor/etc/thermal/thermal_policy_01.conf
+vendor/etc/thermal/thermal_policy_02.conf
+vendor/etc/thermal/thermal_policy_03.conf
+vendor/etc/thermal/thermal_policy_08.conf
+vendor/etc/thermal/thermal_policy_09.conf
+vendor/etc/thermal/thermal_policy_10.conf
+vendor/etc/thermal/thermal_policy_11.conf
+vendor/etc/thermal/thermal_policy_12.conf
+vendor/etc/thermal/thermal_policy_13.conf
+vendor/etc/thermal/thermal_policy_14.conf
+vendor/etc/thermal/thermal_policy_15.conf
+vendor/etc/thermal/thermal_policy_16.conf
+vendor/etc/thermal/thermal_policy_17.conf
+vendor/etc/thermal/thermal_policy_18.conf
+vendor/etc/thermal/thermal_policy_19.conf
+vendor/etc/thermal/thermal_policy_20.conf
+
 # Vibrator
 vendor/firmware/haptic_ram.bin
 vendor/firmware/haptic_rtp_auto_sin.bin
