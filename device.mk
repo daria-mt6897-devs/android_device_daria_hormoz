@@ -59,6 +59,25 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.mt6897 \
+    fstab.mt6897.vendor_ramdisk \
+    init_conninfra.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6897.rc \
+    init.cgroup.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    ueventd.mt6897.rc
+
+PRODUCT_PACKAGES += \
+    init.insmod.sh \
+    init.insmod.mt6897.cfg
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
